@@ -40,7 +40,7 @@ The BLE interface also supports commands such as **TARE** and **RESET**.
 
 ---
 
-# 4. Processing Algorithms
+##S 4. ProcessSing Algorithms
 
 The Smart Coaster firmware uses multiple processing stages to obtain stable weight measurements and determine hydration-related information.
 
