@@ -44,7 +44,7 @@ The BLE interface also supports commands such as **TARE** and **RESET**.
 
 The Smart Coaster firmware uses multiple processing stages to obtain stable weight measurements and determine hydration-related information.
 
-## 4.1 Sample Collection
+### 4.1 Sample Collection
 
 The system collects load-cell measurements over a defined number of samples before further processing.
 
@@ -52,7 +52,7 @@ The system collects load-cell measurements over a defined number of samples befo
 
 ---
 
-## 4.2 Buffer Processing
+### 4.2 Buffer Processing
 
 The collected samples are processed to obtain a stable measurement and reduce the effect of measurement noise.
 
@@ -60,7 +60,7 @@ The collected samples are processed to obtain a stable measurement and reduce th
 
 ---
 
-## 4.3 Weight and Water-Level Calculation
+### 4.3 Weight and Water-Level Calculation
 
 The processed measurement is used to determine the bottle weight.
 
@@ -70,7 +70,7 @@ The system uses the measured bottle weight to estimate the remaining water level
 
 ---
 
-## 4.4 Bluetooth Communication
+### 4.4 Bluetooth Communication
 
 The processed hydration information is communicated from the ESP32 to the mobile device through BLE.
 
@@ -80,7 +80,7 @@ This stage handles the transmission of the measured information and BLE communic
 
 ---
 
-## 4.5 Sip Detection
+### 4.5 Sip Detection
 
 Sip detection is based on changes in the measured bottle weight.
 
@@ -90,7 +90,7 @@ When the change in weight crosses the defined threshold, the system identifies w
 
 ---
 
-# 5. Overall Data Flow
+## 5. Overall Data Flow
 
 The overall processing flow of the Smart Coaster can be summarized as:
 
