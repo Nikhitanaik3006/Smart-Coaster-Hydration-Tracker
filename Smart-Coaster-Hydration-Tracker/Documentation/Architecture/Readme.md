@@ -92,8 +92,8 @@ When the change in weight crosses the defined threshold, the system identifies w
 
 ## 5. Overall Data Flow
 
-The overall processing flow of the Smart Coaster can be summarized as:
+The overall processing flow of the Smart Coaster is:
 
-**Load Cell → HX711 → Sample Collection → Buffer Processing → Weight & Water-Level Calculation → Sip Detection → BLE Communication → Mobile Device**
+**Load Cell → HX711 → ESP32 → Sample Collection → Buffer Processing → Weight & Water-Level Calculation → Sip Detection → BLE → Mobile Device**
 
 The ESP32 performs the measurement processing and communicates the resulting hydration information to the mobile device through BLE.
